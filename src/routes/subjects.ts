@@ -27,12 +27,16 @@ router.get('/', async (req, res) => {
             );
         }
 
-        if (department) {
-            filterConditions.push(
-                eq(subjects.departmentId, +(department as string))
-            );
+        if (department !== undefined) {
+            const departmentRaw = Array.isArray(department) ? department[0] : department;
+            const departmentId = Number.parseInt(String(departmentRaw), 10);
+            if (!Number.isInteger(departmentId)) {
+                return res.status(400).json({ message: "Invalid department query parameter" });
+            }
+            filterConditions.push(eq(subjects.departmentId, departmentId));
         }
 
+        
         const whereClause = filterConditions.length > 0 ? and(...filterConditions) : undefined;
 
         const countResult = await db
