@@ -1,5 +1,5 @@
 import express from "express";
-import { eq, and, sql, getTableColumns, desc, SQL } from "drizzle-orm";
+import { eq, and, sql, getTableColumns, desc, SQL, ilike, or } from "drizzle-orm";
 import { db } from "../db/index.js";
 import { subjects, departments } from "../db/schema/index.js";
 
@@ -19,11 +19,18 @@ router.get('/', async (req, res) => {
         const filterConditions: SQL[] = [];
 
         if (search) {
-
+            filterConditions.push(
+                or(
+                    ilike(subjects.name, `%${search}%`),
+                    ilike(subjects.code, `%${search}%`)
+                )!
+            );
         }
 
         if (department) {
-
+            filterConditions.push(
+                eq(subjects.departmentId, +(department as string))
+            );
         }
 
         const whereClause = filterConditions.length > 0 ? and(...filterConditions) : undefined;
