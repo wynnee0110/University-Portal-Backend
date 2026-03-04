@@ -64,4 +64,63 @@ router.get("/", async (req, res) => {
     }
 });
 
+// GET /api/users/:id
+router.get('/:id', async (req, res) => {
+    try {
+        const [found] = await db
+            .select({
+                id: user.id,
+                name: user.name,
+                email: user.email,
+                role: user.role,
+                image: user.image,
+                imageCldPubId: user.imageCldPubId,
+                createdAt: user.createdAt,
+            })
+            .from(user)
+            .where(eq(user.id, req.params.id));
+        if (!found) return res.status(404).json({ error: 'User not found' });
+        res.status(200).json({ data: found });
+    } catch (e) {
+        console.error('GET /users/:id error:', e);
+        res.status(500).json({ error: 'Failed to get user' });
+    }
+});
+
+// PUT /api/users/:id
+router.put('/:id', async (req, res) => {
+    try {
+        const { name, role, image, imageCldPubId } = req.body;
+        const [updated] = await db
+            .update(user)
+            .set({ name, role, image, imageCldPubId })
+            .where(eq(user.id, req.params.id))
+            .returning({
+                id: user.id,
+                name: user.name,
+                email: user.email,
+                role: user.role,
+                image: user.image,
+                createdAt: user.createdAt,
+            });
+        if (!updated) return res.status(404).json({ error: 'User not found' });
+        res.status(200).json({ data: updated });
+    } catch (e) {
+        console.error('PUT /users/:id error:', e);
+        res.status(500).json({ error: 'Failed to update user' });
+    }
+});
+
+// DELETE /api/users/:id
+router.delete('/:id', async (req, res) => {
+    try {
+        const [deleted] = await db.delete(user).where(eq(user.id, req.params.id)).returning({ id: user.id });
+        if (!deleted) return res.status(404).json({ error: 'User not found' });
+        res.status(200).json({ data: deleted });
+    } catch (e) {
+        console.error('DELETE /users/:id error:', e);
+        res.status(500).json({ error: 'Failed to delete user' });
+    }
+});
+
 export default router;

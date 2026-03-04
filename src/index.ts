@@ -4,12 +4,15 @@ import 'dotenv/config';
 import express from 'express';
 import subjectsRouter from './routes/subjects.js';
 import usersRouter from './routes/users.js';
+import classesRouter from './routes/classes.js';
+import departmentsRouter from './routes/departments.js';
+import enrollmentsRouter from './routes/enrollments.js';
+import statsRouter from './routes/stats.js';
 import cors from 'cors';
 import arcjet, { shield, detectBot, tokenBucket } from '@arcjet/node';
 import securityMiddleware from './middleware/security.js';
 import { auth } from "./lib/auth.js";
 import { toNodeHandler } from "better-auth/node";
-import classesRouter from './routes/classes.js';
 
 if (!process.env.ARCJET_KEY) {
   throw new Error("ARCJET_KEY is required");
@@ -73,6 +76,9 @@ app.all('/api/auth/*splat', toNodeHandler(auth));
 app.use('/api/subjects', subjectsRouter);
 app.use('/api/classes', classesRouter);
 app.use('/api/users', usersRouter);
+app.use('/api/departments', departmentsRouter);
+app.use('/api/enrollments', enrollmentsRouter);
+app.use('/api/stats', statsRouter);
 
 app.get('/', (req, res) => {
   res.json({ message: 'Welcome to the Classroom API!' });

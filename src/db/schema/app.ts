@@ -10,8 +10,8 @@ import {
     index,
     primaryKey
 } from "drizzle-orm/pg-core";
-import {relations} from "drizzle-orm";
-import {user} from "./auth.js";
+import { relations } from "drizzle-orm";
+import { user } from "./auth.ts";
 
 export const classStatusEnum = pgEnum('class_status', ['active', 'inactive', 'archived']);
 
@@ -22,18 +22,18 @@ const timestamps = {
 
 export const departments = pgTable('departments', {
     id: integer('id').primaryKey().generatedAlwaysAsIdentity(),
-    code: varchar('code', {length: 50}).notNull().unique(),
-    name: varchar('name', {length: 255}).notNull(),
-    description: varchar('description', {length: 255}),
+    code: varchar('code', { length: 50 }).notNull().unique(),
+    name: varchar('name', { length: 255 }).notNull(),
+    description: varchar('description', { length: 255 }),
     ...timestamps
 });
 
 export const subjects = pgTable('subjects', {
     id: integer('id').primaryKey().generatedAlwaysAsIdentity(),
     departmentId: integer('department_id').notNull().references(() => departments.id, { onDelete: 'restrict' }),
-    name: varchar('name', {length: 255}).notNull(),
-    code: varchar('code', {length: 50}).notNull().unique(),
-    description: varchar('description', {length: 255}),
+    name: varchar('name', { length: 255 }).notNull(),
+    code: varchar('code', { length: 50 }).notNull().unique(),
+    description: varchar('description', { length: 255 }),
     ...timestamps
 });
 
@@ -42,7 +42,7 @@ export const classes = pgTable('classes', {
     subjectId: integer('subject_id').notNull().references(() => subjects.id, { onDelete: 'cascade' }),
     teacherId: text('teacher_id').notNull().references(() => user.id, { onDelete: 'restrict' }),
     inviteCode: text('invite_code').notNull().unique(),
-    name: varchar('name', {length: 255}).notNull(),
+    name: varchar('name', { length: 255 }).notNull(),
     bannerCldPubId: text('banner_cld_pub_id'),
     bannerUrl: text('banner_url'),
     description: text('description'),
@@ -56,13 +56,19 @@ export const classes = pgTable('classes', {
 ]);
 
 export const enrollments = pgTable('enrollments', {
-    studentId: text('student_id').notNull().references(() => user.id, { onDelete: 'cascade' }),
-    classId: integer('class_id').notNull().references(() => classes.id, { onDelete: 'cascade' }),
+    studentId: text('student_id')
+        .notNull()
+        .references(() => user.id, { onDelete: 'cascade' }),
+
+    classId: integer('class_id')
+        .notNull()
+        .references(() => classes.id, { onDelete: 'cascade' }),
+
+    createdAt: timestamp('created_at')
+        .defaultNow()
+        .notNull(),
 }, (table) => [
     primaryKey({ columns: [table.studentId, table.classId] }),
-    unique('enrollments_student_id_class_id_unique').on(table.studentId, table.classId),
-    index('enrollments_student_id_idx').on(table.studentId),
-    index('enrollments_class_id_idx').on(table.classId),
 ]);
 
 export const departmentRelations = relations(departments, ({ many }) => ({ subjects: many(subjects) }));
