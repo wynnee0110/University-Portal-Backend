@@ -160,3 +160,404 @@
     at TLSSocket.emit (node:events:508:28)
     at TLSSocket.emit (node:domain:489:12)
     at emitErrorNT (node:internal/streams/destroy:170:8)
+[4/3/2026 15:29:49] [INFO] Dependencies : {"@arcjet/inspect":"^1.1.0","@arcjet/node":"^1.1.0","apminsight":"^5.3.0","better-auth":"^1.5.2","cors":"^2.8.6","dotenv":"^17.3.1","drizzle-orm":"^0.45.1","express":"^5.2.1","pg":"^8.19.0"} 
+[4/3/2026 15:29:49] [CRITICAL] Agent not configured properly. Please check the apminsightnode.json file for the configured licenseKey. Note: Copy-paste the entire alphanumeric device key as the license key. 
+[4/3/2026 15:29:49] [INFO] data processing starts 
+[4/3/2026 15:29:49] [CRITICAL]  Unknown response code ::undefined 
+[4/3/2026 15:29:49] [INFO] intiating /arh/data request to undefined:443 
+[4/3/2026 15:29:49] [INFO] data processing ends 
+[4/3/2026 15:29:49] [INFO] while initiating req to /arh/data, endpoint https://undefined:443/, failed: getaddrinfo ENOTFOUND undefined moving onto next endpoint 
+[4/3/2026 15:29:49] [ERROR] Error occured for in /arh/data request Error: All endpoints failed
+    at tryEndpoint (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:13:16)
+    at /home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:42:17
+    at ClientRequest.<anonymous> (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:90:9)
+    at ClientRequest.emit (node:events:508:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at emitErrorEvent (node:_http_client:108:11)
+    at TLSSocket.socketErrorListener (node:_http_client:575:5)
+    at TLSSocket.emit (node:events:508:28)
+    at TLSSocket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+[4/3/2026 15:30:49] [INFO] Dependencies : {"@arcjet/inspect":"^1.1.0","@arcjet/node":"^1.1.0","apminsight":"^5.3.0","better-auth":"^1.5.2","cors":"^2.8.6","dotenv":"^17.3.1","drizzle-orm":"^0.45.1","express":"^5.2.1","pg":"^8.19.0"} 
+[4/3/2026 15:30:49] [CRITICAL] Agent not configured properly. Please check the apminsightnode.json file for the configured licenseKey. Note: Copy-paste the entire alphanumeric device key as the license key. 
+[4/3/2026 15:30:49] [INFO] data processing starts 
+[4/3/2026 15:30:49] [CRITICAL]  Unknown response code ::undefined 
+[4/3/2026 15:30:49] [INFO] intiating /arh/data request to undefined:443 
+[4/3/2026 15:30:49] [INFO] data processing ends 
+[4/3/2026 15:30:49] [INFO] while initiating req to /arh/data, endpoint https://undefined:443/, failed: getaddrinfo ENOTFOUND undefined moving onto next endpoint 
+[4/3/2026 15:30:49] [ERROR] Error occured for in /arh/data request Error: All endpoints failed
+    at tryEndpoint (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:13:16)
+    at /home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:42:17
+    at ClientRequest.<anonymous> (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:90:9)
+    at ClientRequest.emit (node:events:508:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at emitErrorEvent (node:_http_client:108:11)
+    at TLSSocket.socketErrorListener (node:_http_client:575:5)
+    at TLSSocket.emit (node:events:508:28)
+    at TLSSocket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+[4/3/2026 15:31:6] [CRITICAL] txn dropped due to sampling factor 
+[4/3/2026 15:31:49] [INFO] Dependencies : {"@arcjet/inspect":"^1.1.0","@arcjet/node":"^1.1.0","apminsight":"^5.3.0","better-auth":"^1.5.2","cors":"^2.8.6","dotenv":"^17.3.1","drizzle-orm":"^0.45.1","express":"^5.2.1","pg":"^8.19.0"} 
+[4/3/2026 15:31:49] [CRITICAL] Agent not configured properly. Please check the apminsightnode.json file for the configured licenseKey. Note: Copy-paste the entire alphanumeric device key as the license key. 
+[4/3/2026 15:31:49] [INFO] data processing starts 
+[4/3/2026 15:31:49] [CRITICAL]  Unknown response code ::undefined 
+[4/3/2026 15:31:49] [INFO] intiating /arh/data request to undefined:443 
+[4/3/2026 15:31:49] [INFO] data processing ends 
+[4/3/2026 15:31:49] [INFO] while initiating req to /arh/data, endpoint https://undefined:443/, failed: getaddrinfo ENOTFOUND undefined moving onto next endpoint 
+[4/3/2026 15:31:49] [ERROR] Error occured for in /arh/data request Error: All endpoints failed
+    at tryEndpoint (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:13:16)
+    at /home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:42:17
+    at ClientRequest.<anonymous> (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:90:9)
+    at ClientRequest.emit (node:events:508:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at emitErrorEvent (node:_http_client:108:11)
+    at TLSSocket.socketErrorListener (node:_http_client:575:5)
+    at TLSSocket.emit (node:events:508:28)
+    at TLSSocket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+[4/3/2026 15:32:49] [INFO] Dependencies : {"@arcjet/inspect":"^1.1.0","@arcjet/node":"^1.1.0","apminsight":"^5.3.0","better-auth":"^1.5.2","cors":"^2.8.6","dotenv":"^17.3.1","drizzle-orm":"^0.45.1","express":"^5.2.1","pg":"^8.19.0"} 
+[4/3/2026 15:32:49] [CRITICAL] Agent not configured properly. Please check the apminsightnode.json file for the configured licenseKey. Note: Copy-paste the entire alphanumeric device key as the license key. 
+[4/3/2026 15:32:49] [INFO] data processing starts 
+[4/3/2026 15:32:49] [CRITICAL]  Unknown response code ::undefined 
+[4/3/2026 15:32:49] [INFO] intiating /arh/data request to undefined:443 
+[4/3/2026 15:32:49] [INFO] data processing ends 
+[4/3/2026 15:32:49] [INFO] while initiating req to /arh/data, endpoint https://undefined:443/, failed: getaddrinfo ENOTFOUND undefined moving onto next endpoint 
+[4/3/2026 15:32:49] [ERROR] Error occured for in /arh/data request Error: All endpoints failed
+    at tryEndpoint (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:13:16)
+    at /home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:42:17
+    at ClientRequest.<anonymous> (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:90:9)
+    at ClientRequest.emit (node:events:508:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at emitErrorEvent (node:_http_client:108:11)
+    at TLSSocket.socketErrorListener (node:_http_client:575:5)
+    at TLSSocket.emit (node:events:508:28)
+    at TLSSocket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+[4/3/2026 15:33:49] [INFO] Dependencies : {"@arcjet/inspect":"^1.1.0","@arcjet/node":"^1.1.0","apminsight":"^5.3.0","better-auth":"^1.5.2","cors":"^2.8.6","dotenv":"^17.3.1","drizzle-orm":"^0.45.1","express":"^5.2.1","pg":"^8.19.0"} 
+[4/3/2026 15:33:49] [CRITICAL] Agent not configured properly. Please check the apminsightnode.json file for the configured licenseKey. Note: Copy-paste the entire alphanumeric device key as the license key. 
+[4/3/2026 15:33:49] [INFO] data processing starts 
+[4/3/2026 15:33:49] [CRITICAL]  Unknown response code ::undefined 
+[4/3/2026 15:33:49] [INFO] intiating /arh/data request to undefined:443 
+[4/3/2026 15:33:49] [INFO] data processing ends 
+[4/3/2026 15:33:49] [INFO] while initiating req to /arh/data, endpoint https://undefined:443/, failed: getaddrinfo ENOTFOUND undefined moving onto next endpoint 
+[4/3/2026 15:33:49] [ERROR] Error occured for in /arh/data request Error: All endpoints failed
+    at tryEndpoint (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:13:16)
+    at /home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:42:17
+    at ClientRequest.<anonymous> (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:90:9)
+    at ClientRequest.emit (node:events:508:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at emitErrorEvent (node:_http_client:108:11)
+    at TLSSocket.socketErrorListener (node:_http_client:575:5)
+    at TLSSocket.emit (node:events:508:28)
+    at TLSSocket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+[4/3/2026 15:34:49] [INFO] Dependencies : {"@arcjet/inspect":"^1.1.0","@arcjet/node":"^1.1.0","apminsight":"^5.3.0","better-auth":"^1.5.2","cors":"^2.8.6","dotenv":"^17.3.1","drizzle-orm":"^0.45.1","express":"^5.2.1","pg":"^8.19.0"} 
+[4/3/2026 15:34:49] [CRITICAL] Agent not configured properly. Please check the apminsightnode.json file for the configured licenseKey. Note: Copy-paste the entire alphanumeric device key as the license key. 
+[4/3/2026 15:34:49] [INFO] data processing starts 
+[4/3/2026 15:34:49] [CRITICAL]  Unknown response code ::undefined 
+[4/3/2026 15:34:49] [INFO] intiating /arh/data request to undefined:443 
+[4/3/2026 15:34:49] [INFO] data processing ends 
+[4/3/2026 15:34:49] [INFO] while initiating req to /arh/data, endpoint https://undefined:443/, failed: getaddrinfo ENOTFOUND undefined moving onto next endpoint 
+[4/3/2026 15:34:49] [ERROR] Error occured for in /arh/data request Error: All endpoints failed
+    at tryEndpoint (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:13:16)
+    at /home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:42:17
+    at ClientRequest.<anonymous> (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:90:9)
+    at ClientRequest.emit (node:events:508:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at emitErrorEvent (node:_http_client:108:11)
+    at TLSSocket.socketErrorListener (node:_http_client:575:5)
+    at TLSSocket.emit (node:events:508:28)
+    at TLSSocket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+[4/3/2026 15:35:49] [INFO] Dependencies : {"@arcjet/inspect":"^1.1.0","@arcjet/node":"^1.1.0","apminsight":"^5.3.0","better-auth":"^1.5.2","cors":"^2.8.6","dotenv":"^17.3.1","drizzle-orm":"^0.45.1","express":"^5.2.1","pg":"^8.19.0"} 
+[4/3/2026 15:35:49] [CRITICAL] Agent not configured properly. Please check the apminsightnode.json file for the configured licenseKey. Note: Copy-paste the entire alphanumeric device key as the license key. 
+[4/3/2026 15:35:49] [INFO] data processing starts 
+[4/3/2026 15:35:49] [CRITICAL]  Unknown response code ::undefined 
+[4/3/2026 15:35:49] [INFO] intiating /arh/data request to undefined:443 
+[4/3/2026 15:35:49] [INFO] data processing ends 
+[4/3/2026 15:35:59] [INFO] while initiating req to /arh/data, endpoint https://undefined:443/, failed: getaddrinfo ENOTFOUND undefined moving onto next endpoint 
+[4/3/2026 15:35:59] [ERROR] Error occured for in /arh/data request Error: All endpoints failed
+    at tryEndpoint (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:13:16)
+    at /home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:42:17
+    at ClientRequest.<anonymous> (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:90:9)
+    at ClientRequest.emit (node:events:508:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at emitErrorEvent (node:_http_client:108:11)
+    at TLSSocket.socketErrorListener (node:_http_client:575:5)
+    at TLSSocket.emit (node:events:508:28)
+    at TLSSocket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+[4/3/2026 15:36:0] [CRITICAL] txn dropped due to sampling factor 
+[4/3/2026 15:36:49] [INFO] Dependencies : {"@arcjet/inspect":"^1.1.0","@arcjet/node":"^1.1.0","apminsight":"^5.3.0","better-auth":"^1.5.2","cors":"^2.8.6","dotenv":"^17.3.1","drizzle-orm":"^0.45.1","express":"^5.2.1","pg":"^8.19.0"} 
+[4/3/2026 15:36:49] [CRITICAL] Agent not configured properly. Please check the apminsightnode.json file for the configured licenseKey. Note: Copy-paste the entire alphanumeric device key as the license key. 
+[4/3/2026 15:36:49] [INFO] data processing starts 
+[4/3/2026 15:36:49] [CRITICAL]  Unknown response code ::undefined 
+[4/3/2026 15:36:49] [INFO] intiating /arh/data request to undefined:443 
+[4/3/2026 15:36:49] [INFO] data processing ends 
+[4/3/2026 15:36:50] [INFO] while initiating req to /arh/data, endpoint https://undefined:443/, failed: getaddrinfo ENOTFOUND undefined moving onto next endpoint 
+[4/3/2026 15:36:50] [ERROR] Error occured for in /arh/data request Error: All endpoints failed
+    at tryEndpoint (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:13:16)
+    at /home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:42:17
+    at ClientRequest.<anonymous> (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:90:9)
+    at ClientRequest.emit (node:events:508:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at emitErrorEvent (node:_http_client:108:11)
+    at TLSSocket.socketErrorListener (node:_http_client:575:5)
+    at TLSSocket.emit (node:events:508:28)
+    at TLSSocket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+[4/3/2026 15:37:50] [INFO] Dependencies : {"@arcjet/inspect":"^1.1.0","@arcjet/node":"^1.1.0","apminsight":"^5.3.0","better-auth":"^1.5.2","cors":"^2.8.6","dotenv":"^17.3.1","drizzle-orm":"^0.45.1","express":"^5.2.1","pg":"^8.19.0"} 
+[4/3/2026 15:37:50] [CRITICAL] Agent not configured properly. Please check the apminsightnode.json file for the configured licenseKey. Note: Copy-paste the entire alphanumeric device key as the license key. 
+[4/3/2026 15:37:50] [INFO] data processing starts 
+[4/3/2026 15:37:50] [CRITICAL]  Unknown response code ::undefined 
+[4/3/2026 15:37:50] [INFO] intiating /arh/data request to undefined:443 
+[4/3/2026 15:37:50] [INFO] data processing ends 
+[4/3/2026 15:37:50] [INFO] while initiating req to /arh/data, endpoint https://undefined:443/, failed: getaddrinfo ENOTFOUND undefined moving onto next endpoint 
+[4/3/2026 15:37:50] [ERROR] Error occured for in /arh/data request Error: All endpoints failed
+    at tryEndpoint (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:13:16)
+    at /home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:42:17
+    at ClientRequest.<anonymous> (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:90:9)
+    at ClientRequest.emit (node:events:508:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at emitErrorEvent (node:_http_client:108:11)
+    at TLSSocket.socketErrorListener (node:_http_client:575:5)
+    at TLSSocket.emit (node:events:508:28)
+    at TLSSocket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+[4/3/2026 15:38:50] [INFO] Dependencies : {"@arcjet/inspect":"^1.1.0","@arcjet/node":"^1.1.0","apminsight":"^5.3.0","better-auth":"^1.5.2","cors":"^2.8.6","dotenv":"^17.3.1","drizzle-orm":"^0.45.1","express":"^5.2.1","pg":"^8.19.0"} 
+[4/3/2026 15:38:50] [CRITICAL] Agent not configured properly. Please check the apminsightnode.json file for the configured licenseKey. Note: Copy-paste the entire alphanumeric device key as the license key. 
+[4/3/2026 15:38:50] [INFO] data processing starts 
+[4/3/2026 15:38:50] [CRITICAL]  Unknown response code ::undefined 
+[4/3/2026 15:38:50] [INFO] intiating /arh/data request to undefined:443 
+[4/3/2026 15:38:50] [INFO] data processing ends 
+[4/3/2026 15:38:50] [INFO] while initiating req to /arh/data, endpoint https://undefined:443/, failed: getaddrinfo ENOTFOUND undefined moving onto next endpoint 
+[4/3/2026 15:38:50] [ERROR] Error occured for in /arh/data request Error: All endpoints failed
+    at tryEndpoint (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:13:16)
+    at /home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:42:17
+    at ClientRequest.<anonymous> (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:90:9)
+    at ClientRequest.emit (node:events:508:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at emitErrorEvent (node:_http_client:108:11)
+    at TLSSocket.socketErrorListener (node:_http_client:575:5)
+    at TLSSocket.emit (node:events:508:28)
+    at TLSSocket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+[4/3/2026 15:39:50] [INFO] Dependencies : {"@arcjet/inspect":"^1.1.0","@arcjet/node":"^1.1.0","apminsight":"^5.3.0","better-auth":"^1.5.2","cors":"^2.8.6","dotenv":"^17.3.1","drizzle-orm":"^0.45.1","express":"^5.2.1","pg":"^8.19.0"} 
+[4/3/2026 15:39:50] [CRITICAL] Agent not configured properly. Please check the apminsightnode.json file for the configured licenseKey. Note: Copy-paste the entire alphanumeric device key as the license key. 
+[4/3/2026 15:39:50] [INFO] data processing starts 
+[4/3/2026 15:39:50] [CRITICAL]  Unknown response code ::undefined 
+[4/3/2026 15:39:50] [INFO] intiating /arh/data request to undefined:443 
+[4/3/2026 15:39:50] [INFO] data processing ends 
+[4/3/2026 15:39:50] [INFO] while initiating req to /arh/data, endpoint https://undefined:443/, failed: getaddrinfo ENOTFOUND undefined moving onto next endpoint 
+[4/3/2026 15:39:50] [ERROR] Error occured for in /arh/data request Error: All endpoints failed
+    at tryEndpoint (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:13:16)
+    at /home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:42:17
+    at ClientRequest.<anonymous> (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:90:9)
+    at ClientRequest.emit (node:events:508:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at emitErrorEvent (node:_http_client:108:11)
+    at TLSSocket.socketErrorListener (node:_http_client:575:5)
+    at TLSSocket.emit (node:events:508:28)
+    at TLSSocket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+[4/3/2026 15:40:50] [INFO] Dependencies : {"@arcjet/inspect":"^1.1.0","@arcjet/node":"^1.1.0","apminsight":"^5.3.0","better-auth":"^1.5.2","cors":"^2.8.6","dotenv":"^17.3.1","drizzle-orm":"^0.45.1","express":"^5.2.1","pg":"^8.19.0"} 
+[4/3/2026 15:40:50] [CRITICAL] Agent not configured properly. Please check the apminsightnode.json file for the configured licenseKey. Note: Copy-paste the entire alphanumeric device key as the license key. 
+[4/3/2026 15:40:50] [INFO] data processing starts 
+[4/3/2026 15:40:50] [CRITICAL]  Unknown response code ::undefined 
+[4/3/2026 15:40:50] [INFO] intiating /arh/data request to undefined:443 
+[4/3/2026 15:40:50] [INFO] data processing ends 
+[4/3/2026 15:40:50] [INFO] while initiating req to /arh/data, endpoint https://undefined:443/, failed: getaddrinfo ENOTFOUND undefined moving onto next endpoint 
+[4/3/2026 15:40:50] [ERROR] Error occured for in /arh/data request Error: All endpoints failed
+    at tryEndpoint (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:13:16)
+    at /home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:42:17
+    at ClientRequest.<anonymous> (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:90:9)
+    at ClientRequest.emit (node:events:508:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at emitErrorEvent (node:_http_client:108:11)
+    at TLSSocket.socketErrorListener (node:_http_client:575:5)
+    at TLSSocket.emit (node:events:508:28)
+    at TLSSocket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+[4/3/2026 15:41:43] [CRITICAL] txn dropped due to sampling factor 
+[4/3/2026 15:41:50] [INFO] Dependencies : {"@arcjet/inspect":"^1.1.0","@arcjet/node":"^1.1.0","apminsight":"^5.3.0","better-auth":"^1.5.2","cors":"^2.8.6","dotenv":"^17.3.1","drizzle-orm":"^0.45.1","express":"^5.2.1","pg":"^8.19.0"} 
+[4/3/2026 15:41:50] [CRITICAL] Agent not configured properly. Please check the apminsightnode.json file for the configured licenseKey. Note: Copy-paste the entire alphanumeric device key as the license key. 
+[4/3/2026 15:41:50] [INFO] data processing starts 
+[4/3/2026 15:41:50] [CRITICAL]  Unknown response code ::undefined 
+[4/3/2026 15:41:50] [INFO] intiating /arh/data request to undefined:443 
+[4/3/2026 15:41:50] [INFO] data processing ends 
+[4/3/2026 15:41:50] [INFO] while initiating req to /arh/data, endpoint https://undefined:443/, failed: getaddrinfo ENOTFOUND undefined moving onto next endpoint 
+[4/3/2026 15:41:50] [ERROR] Error occured for in /arh/data request Error: All endpoints failed
+    at tryEndpoint (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:13:16)
+    at /home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:42:17
+    at ClientRequest.<anonymous> (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:90:9)
+    at ClientRequest.emit (node:events:508:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at emitErrorEvent (node:_http_client:108:11)
+    at TLSSocket.socketErrorListener (node:_http_client:575:5)
+    at TLSSocket.emit (node:events:508:28)
+    at TLSSocket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+[4/3/2026 15:42:50] [INFO] Dependencies : {"@arcjet/inspect":"^1.1.0","@arcjet/node":"^1.1.0","apminsight":"^5.3.0","better-auth":"^1.5.2","cors":"^2.8.6","dotenv":"^17.3.1","drizzle-orm":"^0.45.1","express":"^5.2.1","pg":"^8.19.0"} 
+[4/3/2026 15:42:50] [CRITICAL] Agent not configured properly. Please check the apminsightnode.json file for the configured licenseKey. Note: Copy-paste the entire alphanumeric device key as the license key. 
+[4/3/2026 15:42:50] [INFO] data processing starts 
+[4/3/2026 15:42:50] [CRITICAL]  Unknown response code ::undefined 
+[4/3/2026 15:42:50] [INFO] intiating /arh/data request to undefined:443 
+[4/3/2026 15:42:50] [INFO] data processing ends 
+[4/3/2026 15:42:50] [INFO] while initiating req to /arh/data, endpoint https://undefined:443/, failed: getaddrinfo ENOTFOUND undefined moving onto next endpoint 
+[4/3/2026 15:42:50] [ERROR] Error occured for in /arh/data request Error: All endpoints failed
+    at tryEndpoint (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:13:16)
+    at /home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:42:17
+    at ClientRequest.<anonymous> (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:90:9)
+    at ClientRequest.emit (node:events:508:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at emitErrorEvent (node:_http_client:108:11)
+    at TLSSocket.socketErrorListener (node:_http_client:575:5)
+    at TLSSocket.emit (node:events:508:28)
+    at TLSSocket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+[4/3/2026 15:43:11] [CRITICAL] txn dropped due to sampling factor 
+[4/3/2026 15:43:50] [INFO] Dependencies : {"@arcjet/inspect":"^1.1.0","@arcjet/node":"^1.1.0","apminsight":"^5.3.0","better-auth":"^1.5.2","cors":"^2.8.6","dotenv":"^17.3.1","drizzle-orm":"^0.45.1","express":"^5.2.1","pg":"^8.19.0"} 
+[4/3/2026 15:43:50] [CRITICAL] Agent not configured properly. Please check the apminsightnode.json file for the configured licenseKey. Note: Copy-paste the entire alphanumeric device key as the license key. 
+[4/3/2026 15:43:50] [INFO] data processing starts 
+[4/3/2026 15:43:50] [CRITICAL]  Unknown response code ::undefined 
+[4/3/2026 15:43:50] [INFO] intiating /arh/data request to undefined:443 
+[4/3/2026 15:43:50] [INFO] data processing ends 
+[4/3/2026 15:43:50] [INFO] while initiating req to /arh/data, endpoint https://undefined:443/, failed: getaddrinfo ENOTFOUND undefined moving onto next endpoint 
+[4/3/2026 15:43:50] [ERROR] Error occured for in /arh/data request Error: All endpoints failed
+    at tryEndpoint (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:13:16)
+    at /home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:42:17
+    at ClientRequest.<anonymous> (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:90:9)
+    at ClientRequest.emit (node:events:508:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at emitErrorEvent (node:_http_client:108:11)
+    at TLSSocket.socketErrorListener (node:_http_client:575:5)
+    at TLSSocket.emit (node:events:508:28)
+    at TLSSocket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+[4/3/2026 15:44:33] [CRITICAL] txn dropped due to sampling factor 
+[4/3/2026 15:44:50] [INFO] Dependencies : {"@arcjet/inspect":"^1.1.0","@arcjet/node":"^1.1.0","apminsight":"^5.3.0","better-auth":"^1.5.2","cors":"^2.8.6","dotenv":"^17.3.1","drizzle-orm":"^0.45.1","express":"^5.2.1","pg":"^8.19.0"} 
+[4/3/2026 15:44:50] [CRITICAL] Agent not configured properly. Please check the apminsightnode.json file for the configured licenseKey. Note: Copy-paste the entire alphanumeric device key as the license key. 
+[4/3/2026 15:44:50] [INFO] data processing starts 
+[4/3/2026 15:44:50] [CRITICAL]  Unknown response code ::undefined 
+[4/3/2026 15:44:50] [INFO] intiating /arh/data request to undefined:443 
+[4/3/2026 15:44:50] [INFO] data processing ends 
+[4/3/2026 15:44:50] [INFO] while initiating req to /arh/data, endpoint https://undefined:443/, failed: getaddrinfo ENOTFOUND undefined moving onto next endpoint 
+[4/3/2026 15:44:50] [ERROR] Error occured for in /arh/data request Error: All endpoints failed
+    at tryEndpoint (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:13:16)
+    at /home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:42:17
+    at ClientRequest.<anonymous> (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:90:9)
+    at ClientRequest.emit (node:events:508:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at emitErrorEvent (node:_http_client:108:11)
+    at TLSSocket.socketErrorListener (node:_http_client:575:5)
+    at TLSSocket.emit (node:events:508:28)
+    at TLSSocket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+[4/3/2026 15:45:50] [INFO] Dependencies : {"@arcjet/inspect":"^1.1.0","@arcjet/node":"^1.1.0","apminsight":"^5.3.0","better-auth":"^1.5.2","cors":"^2.8.6","dotenv":"^17.3.1","drizzle-orm":"^0.45.1","express":"^5.2.1","pg":"^8.19.0"} 
+[4/3/2026 15:45:50] [CRITICAL] Agent not configured properly. Please check the apminsightnode.json file for the configured licenseKey. Note: Copy-paste the entire alphanumeric device key as the license key. 
+[4/3/2026 15:45:50] [INFO] data processing starts 
+[4/3/2026 15:45:50] [CRITICAL]  Unknown response code ::undefined 
+[4/3/2026 15:45:50] [INFO] intiating /arh/data request to undefined:443 
+[4/3/2026 15:45:50] [INFO] data processing ends 
+[4/3/2026 15:45:50] [INFO] while initiating req to /arh/data, endpoint https://undefined:443/, failed: getaddrinfo ENOTFOUND undefined moving onto next endpoint 
+[4/3/2026 15:45:50] [ERROR] Error occured for in /arh/data request Error: All endpoints failed
+    at tryEndpoint (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:13:16)
+    at /home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:42:17
+    at ClientRequest.<anonymous> (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:90:9)
+    at ClientRequest.emit (node:events:508:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at emitErrorEvent (node:_http_client:108:11)
+    at TLSSocket.socketErrorListener (node:_http_client:575:5)
+    at TLSSocket.emit (node:events:508:28)
+    at TLSSocket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+[4/3/2026 15:46:50] [INFO] Dependencies : {"@arcjet/inspect":"^1.1.0","@arcjet/node":"^1.1.0","apminsight":"^5.3.0","better-auth":"^1.5.2","cors":"^2.8.6","dotenv":"^17.3.1","drizzle-orm":"^0.45.1","express":"^5.2.1","pg":"^8.19.0"} 
+[4/3/2026 15:46:50] [CRITICAL] Agent not configured properly. Please check the apminsightnode.json file for the configured licenseKey. Note: Copy-paste the entire alphanumeric device key as the license key. 
+[4/3/2026 15:46:50] [INFO] data processing starts 
+[4/3/2026 15:46:50] [CRITICAL]  Unknown response code ::undefined 
+[4/3/2026 15:46:50] [INFO] intiating /arh/data request to undefined:443 
+[4/3/2026 15:46:50] [INFO] data processing ends 
+[4/3/2026 15:46:50] [INFO] while initiating req to /arh/data, endpoint https://undefined:443/, failed: getaddrinfo ENOTFOUND undefined moving onto next endpoint 
+[4/3/2026 15:46:50] [ERROR] Error occured for in /arh/data request Error: All endpoints failed
+    at tryEndpoint (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:13:16)
+    at /home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:42:17
+    at ClientRequest.<anonymous> (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:90:9)
+    at ClientRequest.emit (node:events:508:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at emitErrorEvent (node:_http_client:108:11)
+    at TLSSocket.socketErrorListener (node:_http_client:575:5)
+    at TLSSocket.emit (node:events:508:28)
+    at TLSSocket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+[4/3/2026 15:47:50] [INFO] Dependencies : {"@arcjet/inspect":"^1.1.0","@arcjet/node":"^1.1.0","apminsight":"^5.3.0","better-auth":"^1.5.2","cors":"^2.8.6","dotenv":"^17.3.1","drizzle-orm":"^0.45.1","express":"^5.2.1","pg":"^8.19.0"} 
+[4/3/2026 15:47:50] [CRITICAL] Agent not configured properly. Please check the apminsightnode.json file for the configured licenseKey. Note: Copy-paste the entire alphanumeric device key as the license key. 
+[4/3/2026 15:47:50] [INFO] data processing starts 
+[4/3/2026 15:47:50] [CRITICAL]  Unknown response code ::undefined 
+[4/3/2026 15:47:50] [INFO] intiating /arh/data request to undefined:443 
+[4/3/2026 15:47:50] [INFO] data processing ends 
+[4/3/2026 15:47:50] [INFO] while initiating req to /arh/data, endpoint https://undefined:443/, failed: getaddrinfo ENOTFOUND undefined moving onto next endpoint 
+[4/3/2026 15:47:50] [ERROR] Error occured for in /arh/data request Error: All endpoints failed
+    at tryEndpoint (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:13:16)
+    at /home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:42:17
+    at ClientRequest.<anonymous> (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:90:9)
+    at ClientRequest.emit (node:events:508:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at emitErrorEvent (node:_http_client:108:11)
+    at TLSSocket.socketErrorListener (node:_http_client:575:5)
+    at TLSSocket.emit (node:events:508:28)
+    at TLSSocket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+[4/3/2026 15:48:50] [INFO] Dependencies : {"@arcjet/inspect":"^1.1.0","@arcjet/node":"^1.1.0","apminsight":"^5.3.0","better-auth":"^1.5.2","cors":"^2.8.6","dotenv":"^17.3.1","drizzle-orm":"^0.45.1","express":"^5.2.1","pg":"^8.19.0"} 
+[4/3/2026 15:48:50] [CRITICAL] Agent not configured properly. Please check the apminsightnode.json file for the configured licenseKey. Note: Copy-paste the entire alphanumeric device key as the license key. 
+[4/3/2026 15:48:50] [INFO] data processing starts 
+[4/3/2026 15:48:50] [CRITICAL]  Unknown response code ::undefined 
+[4/3/2026 15:48:50] [INFO] intiating /arh/data request to undefined:443 
+[4/3/2026 15:48:50] [INFO] data processing ends 
+[4/3/2026 15:48:50] [INFO] while initiating req to /arh/data, endpoint https://undefined:443/, failed: getaddrinfo ENOTFOUND undefined moving onto next endpoint 
+[4/3/2026 15:48:50] [ERROR] Error occured for in /arh/data request Error: All endpoints failed
+    at tryEndpoint (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:13:16)
+    at /home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:42:17
+    at ClientRequest.<anonymous> (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:90:9)
+    at ClientRequest.emit (node:events:508:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at emitErrorEvent (node:_http_client:108:11)
+    at TLSSocket.socketErrorListener (node:_http_client:575:5)
+    at TLSSocket.emit (node:events:508:28)
+    at TLSSocket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+[4/3/2026 15:49:50] [INFO] Dependencies : {"@arcjet/inspect":"^1.1.0","@arcjet/node":"^1.1.0","apminsight":"^5.3.0","better-auth":"^1.5.2","cors":"^2.8.6","dotenv":"^17.3.1","drizzle-orm":"^0.45.1","express":"^5.2.1","pg":"^8.19.0"} 
+[4/3/2026 15:49:50] [CRITICAL] Agent not configured properly. Please check the apminsightnode.json file for the configured licenseKey. Note: Copy-paste the entire alphanumeric device key as the license key. 
+[4/3/2026 15:49:50] [INFO] data processing starts 
+[4/3/2026 15:49:50] [CRITICAL]  Unknown response code ::undefined 
+[4/3/2026 15:49:50] [INFO] intiating /arh/data request to undefined:443 
+[4/3/2026 15:49:50] [INFO] data processing ends 
+[4/3/2026 15:49:50] [INFO] while initiating req to /arh/data, endpoint https://undefined:443/, failed: getaddrinfo ENOTFOUND undefined moving onto next endpoint 
+[4/3/2026 15:49:50] [ERROR] Error occured for in /arh/data request Error: All endpoints failed
+    at tryEndpoint (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:13:16)
+    at /home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:42:17
+    at ClientRequest.<anonymous> (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:90:9)
+    at ClientRequest.emit (node:events:508:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at emitErrorEvent (node:_http_client:108:11)
+    at TLSSocket.socketErrorListener (node:_http_client:575:5)
+    at TLSSocket.emit (node:events:508:28)
+    at TLSSocket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+[4/3/2026 15:50:50] [INFO] Dependencies : {"@arcjet/inspect":"^1.1.0","@arcjet/node":"^1.1.0","apminsight":"^5.3.0","better-auth":"^1.5.2","cors":"^2.8.6","dotenv":"^17.3.1","drizzle-orm":"^0.45.1","express":"^5.2.1","pg":"^8.19.0"} 
+[4/3/2026 15:50:50] [CRITICAL] Agent not configured properly. Please check the apminsightnode.json file for the configured licenseKey. Note: Copy-paste the entire alphanumeric device key as the license key. 
+[4/3/2026 15:50:50] [INFO] data processing starts 
+[4/3/2026 15:50:50] [CRITICAL]  Unknown response code ::undefined 
+[4/3/2026 15:50:50] [INFO] intiating /arh/data request to undefined:443 
+[4/3/2026 15:50:50] [INFO] data processing ends 
+[4/3/2026 15:50:50] [INFO] while initiating req to /arh/data, endpoint https://undefined:443/, failed: getaddrinfo ENOTFOUND undefined moving onto next endpoint 
+[4/3/2026 15:50:50] [ERROR] Error occured for in /arh/data request Error: All endpoints failed
+    at tryEndpoint (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:13:16)
+    at /home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:42:17
+    at ClientRequest.<anonymous> (/home/wayne/Documents/GITREPO/classroom/classroom-backend/node_modules/apminsight/lib/communication/reqhandler.js:90:9)
+    at ClientRequest.emit (node:events:508:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at emitErrorEvent (node:_http_client:108:11)
+    at TLSSocket.socketErrorListener (node:_http_client:575:5)
+    at TLSSocket.emit (node:events:508:28)
+    at TLSSocket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
