@@ -64,14 +64,13 @@ app.use(cors({
   credentials: true
 }));
 
-app.use(securityMiddleware);
+//app.use(securityMiddleware);
 
 
 
 app.all('/api/auth/*splat', toNodeHandler(auth));
 
 app.use('/api/subjects', subjectsRouter);
-
 app.use('/api/classes', classesRouter);
 app.use('/api/users', usersRouter);
 
