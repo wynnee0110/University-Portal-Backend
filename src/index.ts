@@ -3,6 +3,7 @@ AgentApi.config()
 import 'dotenv/config';
 import express from 'express';
 import subjectsRouter from './routes/subjects.js';
+import usersRouter from './routes/users.js';
 import cors from 'cors';
 import arcjet, { shield, detectBot, tokenBucket } from '@arcjet/node';
 import securityMiddleware from './middleware/security.js';
@@ -72,6 +73,7 @@ app.all('/api/auth/*splat', toNodeHandler(auth));
 app.use('/api/subjects', subjectsRouter);
 
 app.use('/api/classes', classesRouter);
+app.use('/api/users', usersRouter);
 
 app.get('/', (req, res) => {
   res.json({ message: 'Welcome to the Classroom API!' });
