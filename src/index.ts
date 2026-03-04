@@ -6,7 +6,7 @@ import subjectsRouter from './routes/subjects.js';
 import cors from 'cors';
 import arcjet, { shield, detectBot, tokenBucket } from '@arcjet/node';
 import securityMiddleware from './middleware/security.js';
-import { auth } from "./lib/auth.ts";
+import { auth } from "./lib/auth.js";
 import { toNodeHandler } from "better-auth/node";
 
 if (!process.env.ARCJET_KEY) {
