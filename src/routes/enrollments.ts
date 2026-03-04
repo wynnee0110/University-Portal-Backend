@@ -83,7 +83,10 @@ router.post("/", async (req, res) => {
         const [created] = await db
             .insert(enrollments)
             .values({ classId: Number(classId), studentId: String(studentId) })
-            .returning();
+            .returning({
+                studentId: enrollments.studentId,
+                classId: enrollments.classId,
+            });
 
         res.status(201).json({ data: created });
     } catch (e: any) {
@@ -102,7 +105,10 @@ router.delete("/:classId/:studentId", async (req, res) => {
         const [deleted] = await db
             .delete(enrollments)
             .where(and(eq(enrollments.classId, classId), eq(enrollments.studentId, studentId)))
-            .returning();
+            .returning({
+                studentId: enrollments.studentId,
+                classId: enrollments.classId,
+            });
 
         if (!deleted) return res.status(404).json({ error: "Enrollment not found" });
         res.status(200).json({ data: deleted });

@@ -64,9 +64,6 @@ export const enrollments = pgTable('enrollments', {
         .notNull()
         .references(() => classes.id, { onDelete: 'cascade' }),
 
-    createdAt: timestamp('created_at')
-        .defaultNow()
-        .notNull(),
 }, (table) => [
     primaryKey({ columns: [table.studentId, table.classId] }),
 ]);
