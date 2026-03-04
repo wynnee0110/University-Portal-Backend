@@ -8,6 +8,7 @@ import arcjet, { shield, detectBot, tokenBucket } from '@arcjet/node';
 import securityMiddleware from './middleware/security.js';
 import { auth } from "./lib/auth.js";
 import { toNodeHandler } from "better-auth/node";
+import classesRouter from './routes/classes.js';
 
 if (!process.env.ARCJET_KEY) {
   throw new Error("ARCJET_KEY is required");
@@ -56,17 +57,21 @@ if (!frontendUrl) {
 
 app.use(express.json());
 
-app.use(securityMiddleware);
-
 app.use(cors({
   origin: frontendUrl,
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
 
+app.use(securityMiddleware);
+
+
+
 app.all('/api/auth/*splat', toNodeHandler(auth));
 
 app.use('/api/subjects', subjectsRouter);
+
+app.use('/api/classes', classesRouter);
 
 app.get('/', (req, res) => {
   res.json({ message: 'Welcome to the Classroom API!' });
