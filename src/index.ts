@@ -5,7 +5,7 @@ import express from 'express';
 import subjectsRouter from './routes/subjects.js';
 import cors from 'cors';
 import arcjet, { shield, detectBot, tokenBucket } from '@arcjet/node';
-import securityMiddleware from './middleware/security.ts';
+import securityMiddleware from './middleware/security.js';
 import { auth } from "./lib/auth.ts";
 import { toNodeHandler } from "better-auth/node";
 
