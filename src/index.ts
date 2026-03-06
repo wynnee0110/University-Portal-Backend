@@ -8,6 +8,7 @@ import classesRouter from './routes/classes.js';
 import departmentsRouter from './routes/departments.js';
 import enrollmentsRouter from './routes/enrollments.js';
 import statsRouter from './routes/stats.js';
+import aiRouter from './routes/ai.routes.js';
 import cors from 'cors';
 import arcjet, { shield, detectBot, tokenBucket } from '@arcjet/node';
 import securityMiddleware from './middleware/security.js';
@@ -79,6 +80,7 @@ app.use('/api/users', usersRouter);
 app.use('/api/departments', departmentsRouter);
 app.use('/api/enrollments', enrollmentsRouter);
 app.use('/api/stats', statsRouter);
+app.use('/api/ai', aiRouter);
 
 app.get('/', (req, res) => {
   res.json({ message: 'Welcome to the Classroom API!' });
