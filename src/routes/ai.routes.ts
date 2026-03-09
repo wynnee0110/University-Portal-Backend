@@ -1,15 +1,15 @@
 import express from "express";
 import { SYSTEM_PROMPT } from "../ai/prompt.js";
-import { executeAiAction } from "../ai/actionHandler.js";
+import { executeAiQuery } from "../ai/actionHandler.js";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const router = express.Router();
 
 
 router.get("/", (req, res) => {
-  res.json({
-    message: "AI route is working"
-  });
+    res.json({
+        message: "AI route is working"
+    });
 });
 
 router.post("/query", async (req, res) => {
@@ -34,9 +34,13 @@ router.post("/query", async (req, res) => {
         const aiText = result.response.text();
 
         // Parse the JSON directly (responseMimeType guarantees JSON)
-        const action = JSON.parse(aiText);
+        const resultJson = JSON.parse(aiText);
 
-        const actionResult = await executeAiAction(action);
+        if (!resultJson.sql) {
+            throw new Error("AI did not return a valid SQL query.");
+        }
+
+        const actionResult = await executeAiQuery(resultJson.sql);
 
         res.json(actionResult);
     } catch (error: any) {

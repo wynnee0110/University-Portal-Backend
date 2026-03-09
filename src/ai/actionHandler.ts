@@ -1,111 +1,65 @@
 import { db } from "../db/index.js";
-import { user } from "../db/schema/index.js";
-import { eq, ilike, and, like } from "drizzle-orm";
-import crypto from "crypto";
+import { sql } from "drizzle-orm";
 
 /**
- * Executes an action returned by the AI model.
- * The AI only decides the action + filters.
- * This function safely maps that action to real database queries.
+ * Validates a raw SQL query against destructive keywords.
+ * Returns true if safe, false if dangerous.
  */
-export async function executeAiAction(action: any) {
+function isSafeQuery(query: string): boolean {
+    const uppercaseQuery = query.toUpperCase();
 
-    switch (action.action) {
+    // Keywords that can destroy schema, database, or permissions
+    const dangerousKeywords = [
+        "DROP",
+        "ALTER",
+        "TRUNCATE",
+        "GRANT",
+        "REVOKE",
+        "REPLACE",
+        "CREATE TABLE",
+        "CREATE DATABASE",
+        "CREATE ROLE",
+        "CREATE USER",
+        "CREATE INDEX",
+        "CREATE VIEW",
+        "CREATE SEQUENCE"
+    ];
 
-        /**
-         * GET STUDENTS
-         * Example:
-         * "Show all students"
-         * "Find student named John"
-         */
-        case "get_students": {
-
-            const filters = [eq(user.role, "student")];
-
-            if (action.filters?.name) {
-                filters.push(ilike(user.name, `%${action.filters.name}%`));
-            }
-
-            if (action.filters?.email) {
-                filters.push(ilike(user.email, `%${action.filters.email}%`));
-            }
-
-            return db
-                .select()
-                .from(user)
-                .where(and(...filters));
+    for (const keyword of dangerousKeywords) {
+        // Simple string matching to see if the keyword is present.
+        // We pad with spaces/word boundaries to avoid matching partial words.
+        // But to be extra safe, we'll just check if the query contains the keyword standalone
+        const regex = new RegExp(`\\b${keyword}\\b`, 'i');
+        if (regex.test(uppercaseQuery)) {
+            return false;
         }
+    }
 
-        
+    return true;
+}
 
+/**
+ * Executes a raw SQL query returned by the AI model.
+ * Validates the query to ensure no structural damage occurs.
+ */
+export async function executeAiQuery(sqlQuery: string) {
+    if (!sqlQuery || typeof sqlQuery !== "string") {
+        throw new Error("Invalid SQL query provided by AI.");
+    }
 
-        /**
-         * COUNT STUDENTS
-         * Example:
-         * "How many students exist"
-         * "How many students start with W"
-         */
-        case "count_students": {
+    if (!isSafeQuery(sqlQuery)) {
+        throw new Error("Blocked: The generated query contains dangerous keywords (e.g., DROP, ALTER, TRUNCATE).");
+    }
 
-            const filters = [eq(user.role, "student")];
-
-            // Example: name starts with W
-            if (action.filters?.nameStartsWith) {
-                filters.push(
-                    like(user.name, `${action.filters.nameStartsWith}%`)
-                );
-            }
-
-            const results = await db
-                .select()
-                .from(user)
-                .where(and(...filters));
-
-            return {
-                count: results.length
-            };
-        }
-
-
-        /**
-         * CREATE STUDENT
-         * Example:
-         * "Add Lebron James email lebron@gmail.com"
-         */
-        case "create_student": {
-
-            return db
-                .insert(user)
-                .values({
-                    id: crypto.randomUUID(),
-                    name: action.data.name,
-                    email: action.data.email,
-                    emailVerified: false,
-                    role: "student"
-                })
-                .returning();
-        }
-
-
-        /**
-         * DELETE STUDENT
-         * Example:
-         * "Delete student named John"
-         */
-        case "delete_student": {
-
-            if (!action.filters?.name) {
-                throw new Error("delete_student requires name filter");
-            }
-
-            return db
-                .delete(user)
-                .where(ilike(user.name, `%${action.filters.name}%`))
-                .returning();
-        }
-
-
-        default:
-            throw new Error(`Unknown AI action: ${action.action}`);
+    try {
+        // Execute the raw query safely
+        const result = await db.execute(sql.raw(sqlQuery));
+        return {
+            success: true,
+            data: result.rows || result,
+            query: sqlQuery // Optionally return the query to let the user see what was run
+        };
+    } catch (error: any) {
+        throw new Error(`Execution failed: ${error.message}`);
     }
 }
