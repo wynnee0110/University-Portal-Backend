@@ -31,7 +31,10 @@ router.post("/query", async (req, res) => {
         });
 
         const result = await model.generateContent(query);
-        const aiText = result.response.text();
+        let aiText = result.response.text();
+
+        // Strip markdown backticks if AI included them unexpectedly
+        aiText = aiText.replace(/```(json|sql)?/gi, "").replace(/```/g, "").trim();
 
         // Parse the JSON directly (responseMimeType guarantees JSON)
         const resultJson = JSON.parse(aiText);
