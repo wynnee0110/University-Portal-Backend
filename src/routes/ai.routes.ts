@@ -6,7 +6,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 const router = express.Router();
 
 
-router.get("/", (req, res) => {
+router.get("/", async(req, res) => {
     res.json({
         message: "AI route is working"
     });
